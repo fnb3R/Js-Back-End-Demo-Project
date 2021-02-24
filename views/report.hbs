@@ -1,0 +1,25 @@
+<main>
+
+    <section class="expense-report">
+
+        <h1>ID: {{rep._id}}</h1>
+
+        <div class="report-category">
+            <img src="/static/images/amount.png" alt="">
+            <p>Equipment - лв {{rep.total}}</p>
+        </div>
+
+        <div class="report-merchant">
+            <p>{{report.merchant}}</p>
+        </div>
+
+        <div class="report-description">
+            <img src="/static/images/hastag.png" alt="">
+            <p>{{rep.description}}</p>
+        </div>
+
+        <div class="report-action">
+            <a disabled href="/expense/:{{rep._id}}/delete">Stop tracking</a>
+        </div>
+    </section>
+</main>
